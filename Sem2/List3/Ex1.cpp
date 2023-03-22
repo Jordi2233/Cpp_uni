@@ -72,10 +72,13 @@ int main()
 	head->next = new Link{2};
 	head->next->next = new Link{3};
 	head->next->next->next = new Link{4};
+
 	std::cout << "Sum: " << sum(head) << std::endl;
 	std::cout << "Size: " << size(head) << std::endl;
+
 	print(head);
 	reverse(head);
+
 	print(head);
 	release(head);
 
