@@ -40,4 +40,6 @@ int main() {
     double (*f)(double) = [](double x)
     { return x * x - 2; };
     std::cout << find_root(f, 0, 2, 0.0001) << std::endl;
+
+    return 0;
 }
