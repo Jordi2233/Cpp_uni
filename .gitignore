@@ -67,3 +67,6 @@ docker-compose.override.yml
 *.exe
 *.out
 *.app
+EX?
+ex?
+Ex?
