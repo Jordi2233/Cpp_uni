@@ -39,8 +39,12 @@ int main()
 {
 
     double (*f)(double) = [](double x)
-    { return cos(x); };
-    std::cout << find_root(f, 0, 2, 0.0001) << std::endl;
+    { return cos(x) - x; };
 
+    double (*g)(double) = [](double x)
+    { return cos(x) - 0.5; };
+
+    std::cout << "f = " << find_root(f, 0, 2, 0.0001) << std::endl;
+    std::cout << "g = " << find_root(g, 0, 2, 0.0001) << std::endl;
     return 0;
 }

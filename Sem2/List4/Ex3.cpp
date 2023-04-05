@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main(int argc, char *argv[])
+int main(int argc, const char *argv[])
 {
     double sum = 0.0;
 
