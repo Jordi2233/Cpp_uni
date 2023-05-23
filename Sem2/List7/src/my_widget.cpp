@@ -51,14 +51,32 @@ void MyWidget::mousePressEvent(QMouseEvent* event)
 
 void MyWidget::keyPressEvent(QKeyEvent *event)
 {
-    if(event->key() == Qt::Key_Z && event->modifiers() == Qt::ControlModifier)
-    {
-        circles.pop_back();
-        repaint();
+    switch(event->key()) {
+        case Qt::Key_Z:
+            if(event->modifiers() == Qt::ControlModifier) {
+                circles.pop_back();
+                repaint();
+            }
+            break;
+
+        case Qt::Key_A:
+            for (auto &circle : circles ) {
+                circle.radius += 5;
+            }
+            repaint();
+            break;
+
+        case Qt::Key_D:
+            for (auto &circle : circles ) {
+                circle.radius -= 5;
+            }
+            repaint();
+            break;
+
+        default:
+            // If the key event is not Ctrl+Z, pass it to the base class
+            QWidget::keyPressEvent(event);
+            break;
     }
-    else
-    {
-        // If the key event is not Ctrl+Z, pass it to the base class
-        QWidget::keyPressEvent(event);
-    }
+
 }
