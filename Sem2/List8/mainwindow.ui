@@ -36,7 +36,7 @@
          <string>Włącz lub wyłącz animację</string>
         </property>
         <property name="text">
-         <string>Start/Stop</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -73,7 +73,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>28</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_Plik">
@@ -107,7 +107,7 @@
   </widget>
   <action name="action_Koniec">
    <property name="text">
-    <string>&amp;Koniec</string>
+    <string/>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
@@ -115,7 +115,7 @@
   </action>
   <action name="action_O_programie">
    <property name="text">
-    <string>&amp;O programie</string>
+    <string/>
    </property>
   </action>
  </widget>

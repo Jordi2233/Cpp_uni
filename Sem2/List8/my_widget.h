@@ -4,12 +4,13 @@
 #include <QWidget>
 #include <QTimer>
 
+
 class MyWidget : public QWidget
 {
     Q_OBJECT
   public:
     constexpr auto static timer_interval = 200;
-    constexpr auto static num_disks = 8;
+    constexpr auto static num_disks = 12;
     explicit MyWidget(QWidget *parent = nullptr);
     virtual void paintEvent(QPaintEvent *event);
 

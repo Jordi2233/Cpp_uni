@@ -14,13 +14,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void onButtonClicked();
 
 public slots:
     void koniec_programu();
 private slots:
     void on_action_O_programie_triggered();
+    void changeIcon();
 
 private:
+    bool iconSet;
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
